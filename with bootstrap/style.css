@@ -82,6 +82,25 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.col-4{
+  background: white;
+  border-radius: 20px;
+  margin: 3rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #049770;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 25vw;
+}
+.row{
+  align-items: center;
+  justify-content: center;
+}
 
 .col:hover {
   transform: translateY(-5px);
@@ -140,9 +159,9 @@ body {
   position: relative;
 }
 
-.student-img {
-  width: 400px;
-  height: 400px;
+.student-img img{
+  width: 100%;
+  height: 40%;
   border-radius: 20px;
   display: flex;
   align-items: center;
