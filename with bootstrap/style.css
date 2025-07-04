@@ -81,6 +81,7 @@ body {
   color: #049770;
   transition: all 0.3s ease;
   cursor: pointer;
+  height: 20%;
 }
 .col-4{
   background: white;
@@ -96,6 +97,7 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   width: 25vw;
+  height: 20%;
 }
 .row{
   align-items: center;
