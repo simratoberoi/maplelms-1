@@ -18,7 +18,7 @@ body {
 
 .section-3 {
   background: #ffffff;
-  margin-top: 15%;
+  margin-top: 14%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
   height: 20%;
 }
-.col-4{
+.col-sm-6 col-sm-4{
   background: white;
   border-radius: 20px;
   margin: 3rem 2rem;
@@ -103,7 +103,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.col-4:hover {
+.col-sm-6col-md-4 :hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
@@ -114,7 +114,7 @@ body {
 
 .section-1 {
   background-color: #dfeeef;
-  min-height: 100vh;
+  min-height: 76vh;
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -178,7 +178,7 @@ body {
 }
 
 .stats {
-  margin-top: 4rem;
+  margin-top: 1rem;
   grid-column: 1 / -1;
   background-color: #ffffff;
 }
@@ -224,30 +224,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     gap: 1.5rem;
-  }
-
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4,
-  .card-5 {
-    grid-column: 1;
-  }
-
-  .card-1 {
-    grid-row: 1;
-  }
-  .card-2 {
-    grid-row: 2;
-  }
-  .card-3 {
-    grid-row: 3;
-  }
-  .card-4 {
-    grid-row: 4;
-  }
-  .card-5 {
-    grid-row: 5;
   }
 
   .hero-content {
