@@ -44,6 +44,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 4rem 0;
 }
 
@@ -59,14 +60,6 @@ body {
   margin-bottom: 4rem;
 }
 
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
 .counter.counter-value:before{
   content:"";
   width: 30%; 
@@ -105,7 +98,6 @@ body {
   color: #049770;
   transition: all 0.3s ease;
   cursor: pointer;
-  width: 30%;
   min-width: 280px;
   aspect-ratio: 5/1;
   position: relative;
@@ -218,6 +210,18 @@ body {
 
 .row {
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
 .title {
@@ -255,11 +259,6 @@ footer {
   .student-img {
     width: 300px;
     height: 300px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .stat-number {
