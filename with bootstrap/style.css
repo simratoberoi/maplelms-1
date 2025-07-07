@@ -89,52 +89,50 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.firstrow {
   flex-direction: row;
 }
-.secondrow {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.col-one{
+
+.col, .col-one {
   background: white;
   border-radius: 20px;
-  margin: 3rem 2rem;
+  margin: 2rem 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #049770;
   transition: all 0.3s ease;
   cursor: pointer;
-  width:30%;
-  height: 33.33%;
-  position: relative;
-
-}
-.col{
-  background: white;
-  border-radius: 20px;
-  margin: 3rem 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #049770;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  height: 33.33%;
-  width: 33.33%;
+  width: 30%;
+  min-width: 280px;
+  aspect-ratio: 5/1;
   position: relative;
 }
 
-.col:hover {
+@media (max-width: 992px) {
+  .col, .col-one {
+    width: 45%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .col, .col-one {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .col, .col-one {
+    width: 90%;
+    font-size: 1.5rem;
+
+  }
+}
+.col:hover, .col-one:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
@@ -274,6 +272,6 @@ footer {
 
   .main-placeholder {
     width: 90%;
-    height: 300px;
+    height: 70%;
   }
 }
