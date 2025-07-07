@@ -78,7 +78,44 @@ body {
   left:0;
   right:0;
 }
+.thirdcontainer {
+  display: flex;
+  flex-direction: column;
+}
 
+.firstrow,
+.secondrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.firstrow {
+  flex-direction: row;
+}
+.secondrow {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.col-one{
+  background: white;
+  border-radius: 20px;
+  margin: 3rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #049770;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 33.33%;
+  width: 33.33%;
+  position: relative;
+
+}
 .col{
   background: white;
   border-radius: 20px;
@@ -92,7 +129,9 @@ body {
   color: #049770;
   transition: all 0.3s ease;
   cursor: pointer;
-  height: 20%;
+  height: 33.33%;
+  width: 33.33%;
+  position: relative;
 }
 
 .col:hover {
