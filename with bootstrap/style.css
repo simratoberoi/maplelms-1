@@ -61,7 +61,6 @@ body {
 }
 
 .counter.counter-value:before{
-  content:"";
   width: 30%; 
   height: 3px;
   background: #ffffff;
@@ -76,8 +75,7 @@ body {
   flex-direction: column;
 }
 
-.firstrow,
-.secondrow {
+.firstrow{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,7 +83,7 @@ body {
   flex-direction: row;
 }
 
-.col, .col-one {
+.col{
   background: white;
   border-radius: 20px;
   margin: 2rem 1rem;
@@ -98,10 +96,14 @@ body {
   color: #049770;
   transition: all 0.3s ease;
   cursor: pointer;
-  min-width: 280px;
+  min-width: 500px;
   aspect-ratio: 5/1;
   position: relative;
 }
+.col:last-child{
+  order:-1;
+}
+
 
 @media (max-width: 992px) {
   .col, .col-one {
