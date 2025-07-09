@@ -100,9 +100,7 @@ body {
   aspect-ratio: 5/1;
   position: relative;
 }
-.col:last-child{
-  order:-1;
-}
+
 
 
 @media (max-width: 992px) {
