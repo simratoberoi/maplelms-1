@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter-value");
+  document.querySelectorAll(".firstrow").forEach((container) => {
+    if (container.children.length > 1) {
+      container.insertBefore(container.lastElementChild, container.firstElementChild);
+    }
+  });
 
   counters.forEach(function (counter) {
     const target = parseInt(counter.textContent);
@@ -20,3 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(animateCounter);
   });
 });
+
+
+
+
