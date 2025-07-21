@@ -111,7 +111,7 @@ body {
 
 .section-1 {
   background-color: #dfeeef;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -182,7 +182,7 @@ body {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 2rem;
   text-align: center;
   background-color: #ffffff;
 }
